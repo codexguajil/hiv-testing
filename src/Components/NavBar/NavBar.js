@@ -1,9 +1,14 @@
 import React from "react";
+import { Route, NavLink } from "react-router-dom";
+import About from '../About/About';
 
 function NavBar() {
   return (
     <div className="NavBar">
-      <h2>NavBar</h2>
+      <NavLink to="/About" className="nav">
+        About
+      </NavLink>
+      <Route path="/About" component={About} />
     </div>
   );
 }
