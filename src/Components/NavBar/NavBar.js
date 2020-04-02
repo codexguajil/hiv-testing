@@ -2,6 +2,7 @@ import React from "react";
 import { Route, NavLink } from "react-router-dom";
 import About from '../About/About';
 import LogIn from '../../Containers/LogIn/LogIn';
+import Appointment from '../../Containers/Appointment/Appointment';
 
 function NavBar() {
   return (
@@ -16,7 +17,7 @@ function NavBar() {
         LogIn
       </NavLink>
       <Route path="/About" component={About} />
-      <Route path="/MakeAnAppointment" />
+      <Route path="/MakeAnAppointment" component={Appointment} />
       <Route path="/LogIn" component={LogIn} />
     </div>
   );
